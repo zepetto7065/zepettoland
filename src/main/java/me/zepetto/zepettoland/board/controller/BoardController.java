@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class BoardController {
 
     @GetMapping("/board/list")
-    public String getList(Model model){
-        model.addAttribute("name", "test");
-        return "board/list";
+    public String getList(){
+        return "views/board/list";
     }
 
 }

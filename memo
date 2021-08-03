@@ -1,0 +1,12 @@
+#패키지 구조는 어떻게 가져가야하는가?
+1. 서비스 레이어 단위
+ - me.zepetto.zepettoland.dao, me.zepetto.zepettoland.service
+
+
+
+2. 기능 단위
+ - me.zepetto.zepettoland.board, me.zepetto.zepettoland.user
+ - 작은 프로젝트에는 용이
+ - 특정 작업의 영향 범위가 특정 폴더에 제한 되지 않음 , SRP 위배
+ - 위 내용대로 한군데에 모여있지 안항 모듈 분리 작업이 힘들다.
+ - 내부 구현의 디테일은 감추고 바깥에는 추사항화 형태로 제공하기 힘듬.

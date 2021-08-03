@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="siderFragment">
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <div class="sidebar-brand-icon rotate-n-15">
+                <i class="fas fa-laugh-wink"></i>
+            </div>
+            <div class="sidebar-brand-text mx-3">zepetto의 <br/>블로그</div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Dashboard</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            zepetto?
+        </div>
+
+        <li class="nav-item">
+            <a class="nav-link" href="charts.html">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>소개</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="tables.html">
+                <i class="fas fa-fw fa-wrench"></i>
+                <span>이력</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Blog
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+               aria-expanded="true" aria-controls="collapsePages">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>게시글</span>
+            </a>
+            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">IT :</h6>
+                    <a class="collapse-item" href="#">Spring</a>
+                    <a class="collapse-item" href="#">Java</a>
+                    <a class="collapse-item" href="#">JPA</a>
+                    <a class="collapse-item" href="#">알고리즘&자료구조</a>
+                    <a class="collapse-item" href="#">FrontEnd</a>
+                    <a class="collapse-item" href="#">버전관리</a>
+                    <a class="collapse-item" href="#">네트워크</a>
+                    <a class="collapse-item" href="#">스프링 부트와 AWS로 <br> 혼자 구축하는 웹서비스</a>
+                    <a class="collapse-item" href="#">시놀로지(NAS)</a>
+                    <a class="collapse-item" href="#">Computer Science</a>
+                    <div class="collapse-divider"></div>
+                    <h6 class="collapse-header">취미 :</h6>
+                    <a class="collapse-item" href="404.html">요리 레시피</a>
+                    <a class="collapse-item" href="blank.html">음악</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+            <a class="nav-link" href="charts.html">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Charts</span></a>
+        </li>
+
+        <!-- Nav Item - Tables -->
+        <li class="nav-item">
+            <a class="nav-link" href="tables.html">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Tables</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block">
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+        <!-- Sidebar Message -->
+        <div class="sidebar-card d-none d-lg-flex">
+            <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
+            <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
+            <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+</th:block>
+</html>
